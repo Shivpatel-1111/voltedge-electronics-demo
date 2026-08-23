@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VoltEdge Electronics | Premium Smartphones, Laptops, TVs & Tech Accessories</title>
+<meta name="description" content="Shop the latest smartphones, laptops, TVs, audio, gaming gear and smart accessories at VoltEdge Electronics. Fast shipping, flash deals and a 1-year warranty on every order.">
+<meta name="keywords" content="VoltEdge Electronics, electronics store, smartphones, laptops, TVs, headphones, gaming, smart home">
+<meta property="og:title" content="VoltEdge Electronics | Technology That Moves With You">
+<meta property="og:description" content="Discover the latest smartphones, laptops, smart devices and accessories from the world's leading technology brands.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1498049794561-7780e7231661?q=80&w=1200&auto=format&fit=crop">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      colors: { navy950:"#080b14", navy900:"#0b0f1d", navy800:"#111830", navy700:"#1a2240",
+        gray50:"#f4f6fb", gray100:"#e8ecf5", gray500:"#6b7488", gray700:"#3a4356",
+        electric:"#3b6dff", electriclight:"#6a94ff", cyan:"#4fd8ff", amber:"#ffb020" },
+      fontFamily: { display:["Space Grotesk","sans-serif"], body:["Inter","sans-serif"] },
+    } },
+  };
+</script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="font-body bg-gray50 text-navy900">
+
+<!-- ============================= NAVIGATION ============================= -->
+<header id="site-nav" class="fixed top-0 left-0 right-0 z-50 bg-navy950">
+  <div class="max-content mx-auto px-6 lg:px-10">
+    <div class="flex items-center justify-between py-4 gap-4">
+      <a href="index.html" class="font-display text-xl md:text-2xl text-white tracking-tight flex items-center gap-2 flex-shrink-0">
+        <i data-lucide="zap" class="w-6 h-6 text-cyan"></i>Volt<span class="text-electriclight">Edge</span>
+      </a>
+      <nav class="desktop-nav-links hidden md:flex items-center gap-7">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="products.html?category=Smartphones" class="nav-link">Smartphones</a>
+        <a href="products.html?category=Laptops" class="nav-link">Laptops</a>
+        <a href="products.html?category=TVs" class="nav-link">TVs</a>
+        <a href="products.html?category=Headphones" class="nav-link">Audio</a>
+        <a href="products.html?category=Gaming" class="nav-link">Gaming</a>
+        <a href="products.html?category=Accessories" class="nav-link">Accessories</a>
+        <a href="deals.html" class="nav-link">Deals</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="flex items-center gap-4 md:gap-5 flex-shrink-0">
+        <form id="header-search-form" class="hidden lg:flex items-center bg-white/8 border border-white/15 rounded-full px-3 py-1.5">
+          <input id="header-search-input" type="text" placeholder="Search products..." class="bg-transparent text-sm text-white placeholder-white/40 outline-none w-40">
+          <button type="submit" aria-label="Search" class="icon-btn"><i data-lucide="search" class="w-4 h-4"></i></button>
+        </form>
+        <button aria-label="Search" class="icon-btn lg:hidden" onclick="window.location.href='products.html'"><i data-lucide="search" class="w-5 h-5"></i></button>
+        <a href="products.html" aria-label="Wishlist" class="icon-btn relative"><i data-lucide="heart" class="w-5 h-5"></i><span data-wishlist-count class="badge-count hidden">0</span></a>
+        <a href="#" aria-label="Account" class="icon-btn hidden sm:inline-flex"><i data-lucide="user" class="w-5 h-5"></i></a>
+        <a href="products.html" aria-label="Cart" class="icon-btn relative"><i data-lucide="shopping-cart" class="w-5 h-5"></i><span data-cart-count class="badge-count hidden">0</span></a>
+        <button id="mobile-menu-btn" aria-label="Open menu" class="md:hidden icon-btn"><i data-lucide="menu" class="w-6 h-6"></i></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div id="mobile-menu" class="mobile-menu fixed top-0 right-0 bottom-0 w-[82%] max-w-sm bg-navy900 text-white z-[60] px-8 py-8 flex flex-col">
+  <div class="flex items-center justify-between mb-10">
+    <span class="font-display text-xl">Menu</span>
+    <button id="mobile-menu-close" aria-label="Close menu" class="p-2"><i data-lucide="x" class="w-6 h-6"></i></button>
+  </div>
+  <nav class="flex flex-col gap-5 text-lg font-display">
+    <a href="index.html">Home</a>
+    <a href="products.html?category=Smartphones">Smartphones</a>
+    <a href="products.html?category=Laptops">Laptops</a>
+    <a href="products.html?category=TVs">TVs</a>
+    <a href="products.html?category=Headphones">Audio</a>
+    <a href="products.html?category=Gaming">Gaming</a>
+    <a href="products.html?category=Accessories">Accessories</a>
+    <a href="deals.html">Deals</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+<main class="pt-[70px]">
+
+<!-- ============================= HERO ============================= -->
+<section class="relative bg-navy950 text-white overflow-hidden">
+  <div class="absolute inset-0 circuit-bg opacity-60"></div>
+  <div class="absolute -top-32 -right-32 w-96 h-96 bg-electric/30 rounded-full blur-[110px]"></div>
+  <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-cyan/20 rounded-full blur-[100px]"></div>
+
+  <div class="max-content mx-auto px-6 lg:px-10 relative py-20 md:py-28 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="eyebrow flex items-center gap-2"><span class="circuit-line"></span>New Season Lineup</p>
+      <h1 class="hero-heading font-display text-4xl md:text-6xl leading-[1.08] mt-5">Technology That<br>Moves With You</h1>
+      <p class="text-white/65 text-base md:text-lg max-w-lg mt-6 leading-relaxed">Discover the latest smartphones, laptops, smart devices and accessories from the world's leading technology brands.</p>
+      <div class="flex flex-wrap gap-4 mt-9">
+        <a href="products.html" class="btn btn-primary">Shop Electronics</a>
+        <a href="deals.html" class="btn btn-outline-dark">Explore Deals</a>
+      </div>
+      <div class="flex items-center gap-8 mt-12">
+        <div><p class="font-display text-2xl">50K+</p><p class="text-xs text-white/50 uppercase tracking-wide mt-1">Happy Customers</p></div>
+        <div class="w-px h-8 bg-white/15"></div>
+        <div><p class="font-display text-2xl">1,200+</p><p class="text-xs text-white/50 uppercase tracking-wide mt-1">Products</p></div>
+        <div class="w-px h-8 bg-white/15"></div>
+        <div><p class="font-display text-2xl">4.8★</p><p class="text-xs text-white/50 uppercase tracking-wide mt-1">Avg. Rating</p></div>
+      </div>
+    </div>
+    <div class="relative reveal">
+      <div class="glass rounded-3xl p-6 md:p-8">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1000&auto=format&fit=crop" alt="Latest smartphone and laptop lineup from VoltEdge Electronics" loading="lazy" class="rounded-2xl w-full h-72 md:h-96 object-cover">
+        <div class="flex items-center justify-between mt-5">
+          <div>
+            <p class="font-display text-lg">ProPhone 15 Series</p>
+            <p class="text-white/50 text-sm">Starting at $999</p>
+          </div>
+          <a href="product-details.html?id=p01" class="btn btn-primary btn-sm">View</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= FLASH DEALS ============================= -->
+<section class="py-20 md:py-24 px-6 lg:px-10 bg-navy900 text-white relative overflow-hidden">
+  <div class="absolute inset-0 circuit-bg opacity-30"></div>
+  <div class="max-content mx-auto relative">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 reveal">
+      <div>
+        <p class="eyebrow flex items-center gap-2"><span class="circuit-line"></span>Limited Time</p>
+        <h2 class="font-display text-3xl md:text-4xl mt-3">Flash Deals</h2>
+      </div>
+      <div id="flash-countdown" class="flex items-center gap-3">
+        <span class="text-xs text-white/50 uppercase tracking-widest mr-1">Ends in</span>
+        <div class="countdown-box"><span class="font-display text-lg font-tabular" data-h>00</span><p class="text-[0.6rem] text-white/40 mt-0.5">HRS</p></div>
+        <div class="countdown-box"><span class="font-display text-lg font-tabular" data-m>00</span><p class="text-[0.6rem] text-white/40 mt-0.5">MIN</p></div>
+        <div class="countdown-box"><span class="font-display text-lg font-tabular" data-s>00</span><p class="text-[0.6rem] text-white/40 mt-0.5">SEC</p></div>
+      </div>
+    </div>
+    <div id="flash-deals-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+  </div>
+</section>
+
+<!-- ============================= CATEGORIES ============================= -->
+<section class="py-20 md:py-24 px-6 lg:px-10">
+  <div class="max-content mx-auto">
+    <div class="mb-12 reveal">
+      <p class="eyebrow flex items-center gap-2"><span class="circuit-line"></span>Browse</p>
+      <h2 class="font-display text-3xl md:text-4xl mt-3">Shop by Category</h2>
+    </div>
+    <div id="category-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4"></div>
+  </div>
+</section>
+
+<!-- ============================= BEST SELLERS / TABS ============================= -->
+<section class="py-20 md:py-24 px-6 lg:px-10 bg-white border-y border-gray100">
+  <div class="max-content mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 reveal">
+      <div>
+        <p class="eyebrow flex items-center gap-2"><span class="circuit-line"></span>Curated Picks</p>
+        <h2 class="font-display text-3xl md:text-4xl mt-3">Discover More</h2>
+      </div>
+      <div class="flex gap-8 border-b border-gray100 md:border-none">
+        <button class="tab-btn active" data-tab="trending">Trending</button>
+        <button class="tab-btn" data-tab="bestseller">Best Sellers</button>
+        <button class="tab-btn" data-tab="new">New Arrivals</button>
+      </div>
+    </div>
+    <div id="tabbed-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+  </div>
+</section>
+
+<!-- ============================= REVIEWS ============================= -->
+<section class="py-20 md:py-24 px-6 lg:px-10">
+  <div class="max-content mx-auto">
+    <div class="mb-12 reveal text-center max-w-xl mx-auto">
+      <p class="eyebrow justify-center flex items-center gap-2"><span class="circuit-line"></span>Customer Voices</p>
+      <h2 class="font-display text-3xl md:text-4xl mt-3">What Our Customers Say</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="review-card reveal p-7 bg-white">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200&auto=format&fit=crop" alt="Portrait of Rohan Malhotra" loading="lazy" class="w-11 h-11 rounded-full object-cover">
+          <div><p class="font-semibold text-sm">Rohan Malhotra</p><span class="star-row">★★★★★</span></div>
+        </div>
+        <p class="text-sm text-gray700 leading-relaxed mb-3">"The ProPhone 15 Series camera is unreal in low light. Delivery was two days early too."</p>
+        <p class="text-xs text-gray500">Purchased: ProPhone 15 Series</p>
+      </div>
+      <div class="review-card reveal p-7 bg-white">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop" alt="Portrait of Sana Kapoor" loading="lazy" class="w-11 h-11 rounded-full object-cover">
+          <div><p class="font-semibold text-sm">Sana Kapoor</p><span class="star-row">★★★★★</span></div>
+        </div>
+        <p class="text-sm text-gray700 leading-relaxed mb-3">"AirBook 13 Air replaced my old laptop completely — silent, fast, and the battery genuinely lasts all day."</p>
+        <p class="text-xs text-gray500">Purchased: AirBook 13 Air</p>
+      </div>
+      <div class="review-card reveal p-7 bg-white">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?q=80&w=200&auto=format&fit=crop" alt="Portrait of Meera Nambiar" loading="lazy" class="w-11 h-11 rounded-full object-cover">
+          <div><p class="font-semibold text-sm">Meera Nambiar</p><span class="star-row">★★★★½</span></div>
+        </div>
+        <p class="text-sm text-gray700 leading-relaxed mb-3">"AuraSound headphones block out my entire open-plan office. Best purchase I've made this year."</p>
+        <p class="text-xs text-gray500">Purchased: AuraSound Over-Ear Headphones</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= NEWSLETTER ============================= -->
+<section class="py-20 px-6 lg:px-10 bg-navy950 text-white relative overflow-hidden">
+  <div class="absolute inset-0 circuit-bg opacity-30"></div>
+  <div class="max-content mx-auto relative text-center max-w-xl">
+    <i data-lucide="mail" class="w-8 h-8 text-cyan mx-auto mb-4"></i>
+    <h2 class="font-display text-3xl md:text-4xl mb-3 reveal">Get Early Access to Deals</h2>
+    <p class="text-white/60 mb-8 reveal">Subscribe for exclusive discounts, new arrivals and flash sale alerts — no spam, unsubscribe anytime.</p>
+    <form id="newsletter-form" class="reveal flex flex-col sm:flex-row gap-3">
+      <div class="flex-1 text-left">
+        <input id="newsletter-email" type="email" placeholder="you@example.com" class="input-field bg-white/8 border-white/15 text-white placeholder-white/40">
+        <p id="newsletter-error" class="field-error">Please enter a valid email address.</p>
+      </div>
+      <button type="submit" class="btn btn-primary">Subscribe</button>
+    </form>
+    <div id="newsletter-success" class="hidden reveal glass rounded-xl p-6">
+      <i data-lucide="check-circle-2" class="w-8 h-8 text-cyan mx-auto mb-3"></i>
+      <p class="font-display text-lg">You're subscribed! Watch your inbox for early deal access.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="bg-navy950 text-white pt-16 pb-8 px-6 lg:px-10">
+  <div class="max-content mx-auto grid sm:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+    <div class="lg:col-span-2">
+      <a href="index.html" class="font-display text-xl flex items-center gap-2"><i data-lucide="zap" class="w-5 h-5 text-cyan"></i>Volt<span class="text-electriclight">Edge</span></a>
+      <p class="text-white/50 text-sm mt-4 leading-relaxed max-w-xs">Premium electronics, thoughtfully curated — smartphones, laptops, audio, gaming and smart home devices with fast shipping and real support.</p>
+      <div class="flex gap-4 mt-6">
+        <a href="#" aria-label="Instagram" class="icon-btn"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+        <a href="#" aria-label="Facebook" class="icon-btn"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+        <a href="#" aria-label="X" class="icon-btn"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+        <a href="#" aria-label="YouTube" class="icon-btn"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+      </div>
+    </div>
+    <div>
+      <p class="text-xs uppercase tracking-widest text-white/40 mb-5">Categories</p>
+      <ul class="space-y-3 text-sm text-white/70">
+        <li><a href="products.html?category=Smartphones" class="hover:text-cyan">Smartphones</a></li>
+        <li><a href="products.html?category=Laptops" class="hover:text-cyan">Laptops</a></li>
+        <li><a href="products.html?category=TVs" class="hover:text-cyan">TVs</a></li>
+        <li><a href="products.html?category=Headphones" class="hover:text-cyan">Audio</a></li>
+        <li><a href="products.html?category=Gaming" class="hover:text-cyan">Gaming</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-xs uppercase tracking-widest text-white/40 mb-5">Customer Service</p>
+      <ul class="space-y-3 text-sm text-white/70">
+        <li><a href="contact.html" class="hover:text-cyan">Contact Us</a></li>
+        <li><a href="#" class="hover:text-cyan">Shipping Info</a></li>
+        <li><a href="#" class="hover:text-cyan">Returns & Warranty</a></li>
+        <li><a href="#" class="hover:text-cyan">Track Order</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-xs uppercase tracking-widest text-white/40 mb-5">Company</p>
+      <ul class="space-y-3 text-sm text-white/70">
+        <li><a href="#" class="hover:text-cyan">About VoltEdge</a></li>
+        <li><a href="deals.html" class="hover:text-cyan">Current Deals</a></li>
+        <li><a href="#" class="hover:text-cyan">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-cyan">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-content mx-auto flex flex-col sm:flex-row justify-between items-center gap-3 pt-8 text-xs text-white/40">
+    <p>© <span id="current-year"></span> VoltEdge Electronics. All rights reserved.</p>
+    <p>Demo storefront — no real payments are processed.</p>
+  </div>
+</footer>
+
+<!-- Quick View Modal -->
+<div id="quickview-modal" class="modal-backdrop">
+  <div class="modal-panel relative">
+    <button id="quickview-close" aria-label="Close quick view" class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-gray50 flex items-center justify-center hover:bg-gray100"><i data-lucide="x" class="w-4 h-4"></i></button>
+    <div id="quickview-body"></div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
